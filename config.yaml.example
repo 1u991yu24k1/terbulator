@@ -1,0 +1,26 @@
+# Terbulator Configuration Example
+# Copy this file to ~/.config/terbulator/config.yaml and customize
+
+renderer:
+  backend: "auto"  # Options: "auto", "gpu", "cpu"
+  target_fps: 60
+
+terminal:
+  cols: 80
+  rows: 24
+  font_size: 14.0
+  font_family: "monospace"
+  scrollback: 10000
+  shell: "/bin/bash"  # Shell to execute (default: $SHELL or /bin/bash)
+
+window:
+  title: "terbulator"
+  width: 800
+  height: 600
+  maximize: true  # Set to true to start maximized (default: true)
+
+startup:
+  panes: 4  # Number of panes on startup: 1, 2, or 4
+  layout: "grid"  # Layout type: "single", "horizontal", "vertical", "grid"
+  split_ratio: 0.7  # Horizontal split ratio (e.g., 0.7 = 7:3 ratio for top:bottom)
+  vertical_ratio: 0.5  # Vertical split ratio (e.g., 0.5 = 5:5 ratio for left:right)
